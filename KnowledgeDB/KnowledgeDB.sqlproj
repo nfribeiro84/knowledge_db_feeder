@@ -57,5 +57,20 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Tables" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Nomes.sql" />
+    <Build Include="Tables\UnidadesTerritoriais.sql" />
+    <Build Include="Tables\UT_NomesAlternativos.sql" />
+    <Build Include="Tables\DivisoesTerritoriais.sql" />
+    <Build Include="Tables\DT_NomesAlternativos.sql" />
+    <Build Include="Tables\Unidades_Divisoes.sql" />
+    <Build Include="Tables\HierarquiasTerritoriais.sql" />
+    <Build Include="Tables\HT_NomesAlternativos.sql" />
+    <Build Include="Tables\Unidades_Divisoes_Hierarquias.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="KnowledgeDB.publish.xml" />
   </ItemGroup>
 </Project>
